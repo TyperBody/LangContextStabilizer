@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: EventListener
+metadata:
+  name: context_stabilizer
+  label:
+    en_US: Context Stabilizer
+    zh_Hans: 上下文稳定器
+  description:
+    en_US: Context Stabilizer Event Listener - monitors pipeline events and performs context auditing
+    zh_Hans: 上下文稳定器事件监听器 - 监听流水线事件并执行上下文审查
+spec:
+execution:
+  python:
+    path: context_stabilizer.py
+    attr: ContextStabilizerListener

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Command
+metadata:
+  name: ctxstab
+  label:
+    en_US: Context Stabilizer Command
+    zh_Hans: 上下文稳定器命令
+  description:
+    en_US: Context Stabilizer Command - provides user command interface
+    zh_Hans: 上下文稳定器命令 - 提供用户命令接口
+spec:
+execution:
+  python:
+    path: ctxstab.py
+    attr: CtxstabCommand
